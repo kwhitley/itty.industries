@@ -5,7 +5,8 @@
   --transition-duration: 0.1s;
   --border-radius: 0.6rem;
   --border-thickness: 2px;
-  --accent-color: rgb(255, 0, 200);
+  --accent-hue: 255, 0, 200;
+  --accent-color: rgb(var(--accent-hue));
 
   --link-color: var(--blue);
   --brand-color: var(--accent-color);
@@ -284,7 +285,7 @@ figure {
   }
 }
 
-img {
+figure img {
   width: 100%;
   height: auto;
   object-fit: cover;
