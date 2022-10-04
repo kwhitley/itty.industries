@@ -2,10 +2,12 @@
   import { navlink } from 'svelte-navlink-action'
   import Footer from '~/layout/Footer.svelte'
   import Nav from '~/layout/Nav.svelte'
+  import Page from '~/layout/Page.svelte'
   import '~/styles/app.scss'
 
   // DEFINES IF THE PAGE IS WIDTH-CONSTRAINED
   let constrained = true
+  let year = new Date().getFullYear()
 </script>
 
 <svelte:head>
@@ -18,29 +20,19 @@
 </svelte:head>
 
 <main>
-  <Nav version sticky collapsible>
-    <span slot="brand">
-      it<strike>t</strike>y.sh
-    </span>
-
-    <a href="/basics" use:navlink>Basics</a>
-    <a href="/forms" use:navlink>Forms Elements</a>
-    <a href="/misc" use:navlink>Misc</a>
-    <a href="/" use:navlink>Home (default)</a>
-    <a href="/" use:navlink={{ exact: true }}>Home (exact)</a>
-    <a href="https://aimandkevinbutaimeesnamefirst.com">Another Site</a>
-    <a href="https://itty.cards.com">itty.cards</a>
-    <a href="https://itty.sh">itty.sh</a>
-    <a href="https://aimandkevinbutaimeesnamefirst.com">And Yet Another</a>
-    <a href="https://itty.cards.com">itty.cards</a>
+  <Nav version horizontal constrained>
+    <!-- <a href="/" use:navlink={{ exact: true }}>Home</a>
+    <a href="/about" use:navlink={{ exact: true }}>About</a> -->
   </Nav>
 
   <section class:constrained>
-    <slot />
+    <Page>
+      <slot />
+    </Page>
   </section>
 
   <Footer constrained={constrained}>
-    &copy; 2022, All rights reserved.
+    &copy; {year} Itty Industries, LLC. All rights reserved.
   </Footer>
 </main>
 

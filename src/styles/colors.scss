@@ -51,6 +51,7 @@
 .from-purple { --grad-from: var(--purple); }
 .from-red { --grad-from: var(--red); }
 .from-yellow { --grad-from: var(--yellow); }
+.from-accent { --grad-from: var(--accent-color); }
 .from-foreground { --grad-from: var(--foreground-color); }
 .from-background { --grad-from: var(--background-color); }
 
@@ -62,6 +63,7 @@
 .to-purple { --grad-to: var(--purple); }
 .to-red { --grad-to: var(--red); }
 .to-yellow { --grad-to: var(--yellow); }
+.to-accent { --grad-to: var(--accent-color); }
 .to-foreground { --grad-to: var(--foreground-color); }
 .to-background { --grad-to: var(--background-color); }
 
@@ -76,6 +78,7 @@
 .red { --text-hue: var(--red-hue); }
 .white { --text-hue: var(--white-hue); }
 .yellow { --text-hue: var(--yellow-hue); }
+.accent { color: var(--accent-color); }
 
 .colored {
   --text-color: rgba(var(--text-hue), var(--text-opacity));

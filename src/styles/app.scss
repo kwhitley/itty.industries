@@ -1,7 +1,4 @@
 @import './colors.scss';
-@import './forms.scss';
-@import './utility.scss';
-@import './extras.scss';
 
 :root {
   --max-page-width: 800px;
@@ -12,7 +9,7 @@
 
   --link-color: var(--blue);
   --brand-color: var(--accent-color);
-  --brand-size: 3.2rem;
+  --brand-size: 2.2rem;
   --version-offset: -0.3rem;
   --header-color: var(--background-color);
   --footer-color: var(--background-color);
@@ -30,8 +27,8 @@
 
   // MISC SETTINGS
   --ol-counter-size: 2rem;
-  --image-border-radius: 0.3rem;
-  --image-outline-thickness: 1px;
+  --image-border-radius: 0;
+  --image-outline-thickness: 0;
   --image-outline-color: var(--foreground-25);
 
   // IGNORE STUFF BELOW THIS LINE
@@ -315,4 +312,8 @@ caption {
   @media (max-width: 500px) {
     --page-gutter: 1em;
   }
+}
+
+strong {
+  font-weight: 400;
 }

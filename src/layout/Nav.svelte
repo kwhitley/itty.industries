@@ -14,11 +14,7 @@
 <!-- MARKUP -->
 <header class:sticky>
   <section class:constrained>
-    <Brand showVersion={version}>
-      <slot name="brand">
-        SvelteKit Template
-      </slot>
-    </Brand>
+    <Brand showVersion={version} />
 
     <div class="menu" class:open={$headerIsOpen}>
       {#if collapsible}

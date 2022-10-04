@@ -1,6 +1,6 @@
 {
-  "name": "template-sveltekit",
-  "version": "0.3.0",
+  "name": "itty.industries",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "vite dev",
@@ -20,6 +20,7 @@
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
+    "mdsvex": "^0.10.6",
     "prettier": "^2.7.1",
     "prettier-plugin-svelte": "^2.7.1",
     "sass": "^1.55.0",
