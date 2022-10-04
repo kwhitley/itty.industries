@@ -35,7 +35,7 @@
   </section>
 
   <Footer constrained={constrained}>
-    &copy; {year} Itty Industries, LLC. All rights reserved.
+    &copy; {year} itty industries, LLC. All rights reserved.
   </Footer>
 </main>
 
