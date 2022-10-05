@@ -6,6 +6,9 @@
   import ForkMe from '~/components/ForkMe.svelte'
   import '~/styles/app.scss'
 
+  import GitHub from '~/components/icons/GitHub.svelte'
+  import Twitter from '~/components/icons/Twitter.svelte'
+
   // DEFINES IF THE PAGE IS WIDTH-CONSTRAINED
   let constrained = true
   let year = new Date().getFullYear()
@@ -20,9 +23,10 @@
   <html lang="en" />
 </svelte:head>
 
-<ForkMe user="kwhitley" repo="itty.industries" />
 
 <main>
+  <ForkMe user="kwhitley" repo="itty.industries" />
+
   <Nav version horizontal constrained>
     <!-- <a href="/" use:navlink={{ exact: true }}>Home</a>
     <a href="/about" use:navlink={{ exact: true }}>About</a> -->
@@ -35,7 +39,22 @@
   </section>
 
   <Footer constrained={constrained}>
-    &copy; {year} itty industries, LLC. All rights reserved.
+    <div class="split">
+      &copy; {year} itty industries, LLC. All rights reserved.
+
+      <div class="social">
+        <a href="https://twitter.com/kevinrwhitley">
+          <Twitter />
+        </a>
+
+        <a href="https://github.com/kwhitley">
+          <GitHub />
+        </a>
+      </div>
+    </div>
+
+
+
   </Footer>
 </main>
 
@@ -45,6 +64,7 @@
     flex-flow: column;
     height: 100%;
     overflow: scroll;
+    position: relative;
 
     section {
       flex: 1;
@@ -54,11 +74,28 @@
     }
   }
 
-  small {
-    font-size: 0.5em;
-    letter-spacing: 0em;
-    color: var(--foreground-25);
-    top: -0.4rem;
-    position: relative;
+  .split {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social {
+    flex: 0 5em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1em;
+
+    > * {
+      color: var(--foreground-50);
+      display: block;
+      height: 2em;
+      width: 2em;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: var(--foreground-color);
+      }
+    }
   }
 </style>

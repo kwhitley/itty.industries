@@ -16,12 +16,12 @@
   <section class:constrained>
     <Brand showVersion={version} />
 
-    <div class="menu" class:open={$headerIsOpen}>
+    <div class="menu" class:open={true}>
       {#if collapsible}
         <MenuIcon bind:open={$headerIsOpen} />
       {/if}
 
-      <Menu horizontal={horizontal}>
+      <Menu horizontal={horizontal} open={$headerIsOpen || !collapsible}>
         <slot />
       </Menu>
     </div>

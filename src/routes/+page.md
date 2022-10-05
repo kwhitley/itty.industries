@@ -14,11 +14,9 @@ This path has continue on to handle much of the ecosystem of both API generation
 
 ## and... itty.industries?
 
-In October 2022, itty industries, LLC. was formed to encompass & protect the development of these open-source initiatives, as well as begin the development of several free/commercial tools (to be announced shortly) under the "itty" brand.  Additionally, the free-to-use browser extension [Retheme](https://retheme.org) will be brought under the itty umbrella to continue support and development of that as well.
+In October 2022, itty industries, LLC. was formed to ensure the continuation of these open-source initiatives, as well as begin development on several free/commercial tools (to be announced shortly) under the "itty" brand.  Additionally, the free-to-use browser extension [Retheme](https://retheme.org) will be brought under the itty umbrella to continue support and development of that as well.
 
 [Follow me on Twitter](https://twitter.com/kevinrwhitley) for updates!
-
-~ Kevin W
 
 <style lang="scss">
   img {

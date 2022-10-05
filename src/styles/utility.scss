@@ -2,6 +2,7 @@
   display: flex;
   gap: var(--default-gap);
   flex-flow: row wrap;
+  flex: 1;
 
   &.vertical {
     flex-flow: column;

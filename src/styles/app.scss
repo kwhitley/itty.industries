@@ -1,4 +1,5 @@
 @import './colors.scss';
+@import './utility.scss';
 
 :root {
   --max-page-width: 800px;
@@ -12,7 +13,7 @@
   --brand-color: var(--accent-color);
   --brand-size: 2.2rem;
   --version-offset: -0.3rem;
-  --header-color: var(--background-color);
+  --header-color: var(--foreground-5);
   --footer-color: var(--background-color);
   --page-gutter: 2rem;
   --navlink-border: 2px;
@@ -164,8 +165,6 @@ hr {
 h1, h2, h3 {
   font-size: clamp(4rem, 25vmin, 7rem);
   font-weight: lighter;
-
-  text-shadow: 0 0 1px var(--background-color);
   line-height: 1em;
   letter-spacing: -0.02em;
   padding-top: 0.09em;
