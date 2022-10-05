@@ -1,8 +1,8 @@
 # welcome to <span class="accent">it<strike>t</strike>y</span>
 
-This all started as a fun code-golfing experiment ([itty-router](https://npmjs.com/package/itty-router)), attempting to make a tiny, elegant micro-router for use in service workers, specifically the incredibly powerful/lightweight [Cloudflare Workers](https://workers.cloudflare.com/).  By 2022, this tiny router (especially when used with [extras](https://npmjs.com/package/itty-router-extras)) has become one of the mainstays of serverless routing, especially within the Cloudflare Workers community.
+This all started as a fun code-golfing experiment ([itty-router](https://npmjs.com/package/itty-router)), attempting to make a tiny, elegant micro-router for use in service workers, specifically the incredibly powerful/lightweight [Cloudflare Workers](https://workers.cloudflare.com/).  By 2022, this tiny router has become one of the mainstays of serverless routing within the Cloudflare Workers community.
 
-This path has continue on to handle much of the ecosystem of both API generation (including [response handling](https://npmjs.com/package/itty-router-extras) and [CORS](https://npmjs.com/package/itty-cors)) and API [consumption/interaction](https://npmjs.com/package/itty-fetcher).  Each library typically rests in the ~500 byte range, to keep both your code *and* your bundle sizes down.
+This path has continued on to handle both API generation (including [response handling](https://npmjs.com/package/itty-router-extras) and [CORS](https://npmjs.com/package/itty-cors)) and API [consumption/interaction](https://npmjs.com/package/itty-fetcher).  Each library typically rests in the ~500 byte range, to keep both your code *and* your bundle sizes down.
 
 👇 **current itty packages on NPM**
 
