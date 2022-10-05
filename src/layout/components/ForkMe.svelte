@@ -1,6 +1,7 @@
 <script>
   export let user = ''
   export let repo = ''
+  export let sticky = false
 
   $: repolink = user ? `${user}/${repo}` : repo
 </script>
@@ -8,6 +9,7 @@
 <!-- MARKUP -->
 <a
   class="fork"
+  class:sticky
   href={`https://github.com/${repolink}`}
   >
   Fork me on GitHub
@@ -18,7 +20,7 @@
   .fork {
     --shift: 5.3em;
     z-index: 100;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     background-color: var(--foreground-color);
@@ -31,6 +33,9 @@
     transform: rotate(45deg) translate(var(--shift), var(--shift));
     box-shadow: 0 0 1.3em rgba(0,0,0,0.3);
 
+    &.sticky {
+      position: fixed;
+    }
 
     &:before, &:after {
       content: '';

@@ -8,7 +8,7 @@
 <div class="brand">
   <a href="/">
     <slot>
-      it<strike>ty</strike><small>.industries</small>
+      it<strike>t</strike>y<small>.industries</small>
     </slot>
   </a>
 
