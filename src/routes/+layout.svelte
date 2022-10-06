@@ -63,7 +63,8 @@
     display: flex;
     flex-flow: column;
     height: 100%;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     position: relative;
 
     section {

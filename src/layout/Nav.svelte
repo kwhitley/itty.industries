@@ -64,6 +64,10 @@
     }
   }
 
+  .menu:global(:not(:has(a))) {
+    display: none;
+  }
+
   .sticky {
     border-bottom: 1px solid var(--foreground-50);
     box-shadow: 0 0 1em rgba(0,0,0,0.2);
