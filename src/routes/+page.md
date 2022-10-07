@@ -12,9 +12,9 @@ This path has continued on to handle both API generation (including [response ha
 [![itty-fetcher](https://img.shields.io/npm/dw/itty-fetcher?style=for-the-badge&logo=npm&color=ded&label=itty-fetcher)](https://npmjs.com/package/itty-fetcher)
 [![itty-durable](https://img.shields.io/npm/dw/itty-durable?style=for-the-badge&logo=npm&color=ded&label=itty-durable)](https://npmjs.com/package/itty-durable)
 
-## and... itty.industries?
+## and... itty, the company?
 
-In October 2022, itty industries, LLC. was formed to ensure the continuation of these open-source initiatives, as well as begin development on several free/commercial tools (to be announced shortly) under the "itty" brand.  Additionally, the free-to-use browser extension [Retheme](https://retheme.org) will be brought under the itty umbrella to continue support and development of that as well.
+In October 2022, itty, LLC. was formed to ensure the continuation of these open-source initiatives, as well as begin development on several free/commercial tools (to be announced shortly) under the "itty" brand.  Additionally, the free-to-use browser extension [Retheme](https://retheme.org) will be brought under the itty umbrella to continue support and development of that as well.
 
 [Follow me on Twitter](https://twitter.com/kevinrwhitley) for updates!
 
