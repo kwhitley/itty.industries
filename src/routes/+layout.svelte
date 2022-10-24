@@ -40,7 +40,7 @@
 
   <Footer constrained={constrained}>
     <div class="split">
-      &copy; {year} itty, LLC. All rights reserved.
+      &copy; {year} Kevin R. Whitley. All rights reserved.
 
       <div class="social">
         <a href="https://twitter.com/kevinrwhitley">
