@@ -1,5 +1,6 @@
 <script>
   import { VERSION } from '~/constants'
+	import Skyline from '../components/icons/Skyline.svelte'
 
   export let showVersion = false
 </script>
@@ -8,7 +9,10 @@
 <div class="brand">
   <a href="/">
     <slot>
+      <span class="logo"><Skyline /></span>
       it<strike>t</strike>y<small>.industries</small>
+
+
     </slot>
   </a>
 
@@ -24,6 +28,8 @@
   .brand {
     align-self: center;
     padding: 0.15rem 0;
+    position: relative;
+    overflow: hidden;
   }
 
   .version {
@@ -57,5 +63,10 @@
     font-style: normal;
     letter-spacing: -0.05em;
     color: var(--foreground-color);
+  }
+
+  .logo {
+    display: block;
+    margin-bottom: -0.3em;
   }
 </style>
